@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: linear-gradient(to bottom, rgba(134,102,207,255) , #aa71cc, #c2a1e2);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.body-container {
+    background: linear-gradient(to bottom, rgba(38,45,90,255), #523e9e, #8d48ac);
+    box-shadow: 0 0 20px 0 black;
+    box-shadow: #523e9e;
+    border: 2px solid #000;
+    padding: 20px;
+    border-radius: 20px;
+}
+.body-container h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    color: #fff;
+}
+.form {
+    margin-top: 40px;
+    font-size: 2rem;
+    margin-left: 100px;
+}
+.name input {
+    padding: 7px;
+    border-radius: 20px;
+    width: 350px;
+    font-size: 1.1rem;
+}
+.product-selection input {
+    padding: 7px;
+    border-radius: 20px;
+    width: 350px;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+.btn button {
+    padding: 15px;
+    width: 180px;
+    border-radius: 26px;
+    margin-top: 15px;
+    position: relative;
+    left: 82px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: rgba(221,177,48,255);
+    color: rgba(38,45,90,255);
+    border: none;
+    cursor: pointer;
+}
+.btn button:hover {
+    background: #fff;
+    color: #000;
+}
+.status-box {
+    margin-top: 60px;
+    border: 2px solid #000;
+    width: 540px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: beige;
+    border: none;
+}
+
+.status-box .result {
+    border-bottom: 2px solid #000;
+    width: 540px;
+    background: #000;
+    color: #fff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 18px;
+}
+.status-box .result p {
+    margin-left: 235px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.status-box .alert p {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    font-size: 1.5rem;
+}
+.status-box .msg p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}

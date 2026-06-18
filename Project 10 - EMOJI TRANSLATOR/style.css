@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: linear-gradient(to bottom, rgba(134,102,207,255) , #aa71cc, #c2a1e2);
+    min-height: 100vh;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+.child-main-container h1 {
+    text-align: center;
+    position: relative;
+    top: -35px;
+    color: #fff;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+.child-main-container {
+    background: linear-gradient(to bottom, rgba(38,45,90,255), #523e9e, #8d48ac);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    padding: 60px 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+.emoji-search input {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+.Translate-btn {
+    padding: 18px 30px;
+    width: 100%;
+    max-width: 210px;
+    border-radius: 30px;
+    display: block;
+    margin: 50px auto 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: rgba(221,177,48,255);
+    color: rgba(38,45,90,255);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.Translate-btn:hover {
+    background: #fff;
+    color: #000;
+}
+.result {
+    border: 2px solid black;
+    min-height: 200px;
+    margin-top: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 20px;
+    background-color: beige;
+    border: none;
+    width: 100%;
+}
+.result .head {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: black;
+    color: #fff;
+    padding: 12px;
+}
+.result .result-msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+    word-break: break-word;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .child-main-container {
+        padding: 40px 20px;
+        margin: 20px;
+    }
+    
+    .child-main-container h1 {
+        font-size: 2.2rem;
+        top: -25px;
+    }
+    
+    .emoji-search input {
+        padding: 12px;
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+    
+    .Translate-btn {
+        padding: 16px 25px;
+        font-size: 1.1rem;
+        margin-top: 40px;
+        max-width: 180px;
+    }
+    
+    .result .result-msg {
+        font-size: 2.8rem;
+        min-height: 130px;
+    }
+    
+    .result .head {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .child-main-container {
+        padding: 30px 15px;
+        border-radius: 15px;
+    }
+    
+    .child-main-container h1 {
+        font-size: 1.8rem;
+        top: -20px;
+        margin-bottom: 20px;
+    }
+    
+    .emoji-search input {
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 12px;
+    }
+    
+    .Translate-btn {
+        padding: 14px 20px;
+        font-size: 1rem;
+        margin-top: 30px;
+        max-width: 160px;
+        border-radius: 25px;
+    }
+    
+    .result {
+        margin-top: 40px;
+        min-height: 180px;
+        border-radius: 15px;
+    }
+    
+    .result .head {
+        font-size: 1.1rem;
+        padding: 8px;
+        border-radius: 13px;
+    }
+    
+    .result .result-msg {
+        font-size: 2.2rem;
+        min-height: 120px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .child-main-container h1 {
+        font-size: 1.5rem;
+    }
+    
+    .emoji-search input {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .result .result-msg {
+        font-size: 1.8rem;
+    }
+    
+    .Translate-btn {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+        max-width: 140px;
+    }
+}
+
+/* For very large screens */
+@media (min-width: 1200px) {
+    .child-main-container {
+        max-width: 900px;
+        padding: 70px 50px;
+    }
+    
+    .emoji-search input {
+        max-width: 600px;
+        padding: 16px;
+        font-size: 1.4rem;
+    }
+    
+    .result .result-msg {
+        font-size: 4rem;
+        min-height: 180px;
+    }
+}
